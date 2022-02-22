@@ -25,8 +25,15 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           repo-token: ${{ secrets.GIT_TOKEN }}
-      - name: build
+      - name: cache node_modules 🚀
+        uses: actions/cache@v2
+        with:
+          key: ${{ runner.os }}-${{ hashFiles('./package-lock.json') }}
+          path: |
+            ./node_modules
+      - name: build 🚀
         run: |
+          npm config set registry https://registry.npmmirror.com
           npm i
           npm install -g typescript
           npm run gh-pages

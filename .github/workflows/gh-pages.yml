@@ -38,7 +38,7 @@ jobs:
           npm install -g typescript
           npm run gh-pages
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.

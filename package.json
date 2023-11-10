@@ -28,7 +28,7 @@
         "@fortawesome/fontawesome-free": "^5.15.3",
         "amis": "1.4.2-beta.6",
         "amis-editor": "3.3.12-beta.1",
-        "axios": "0.21.1",
+        "axios": "1.6.0",
         "bootstrap": "3.4.1",
         "copy-to-clipboard": "^3.2.0",
         "mobx": "^4.5.0",
